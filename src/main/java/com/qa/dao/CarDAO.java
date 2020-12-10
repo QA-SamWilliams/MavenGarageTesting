@@ -37,7 +37,7 @@ public class CarDAO implements Dao<Car> {
 	public List<Car> readAll() {
 		List<Vehicle> found = garage.searchByType("Car");
 		List<Car> cars = new ArrayList<Car>();
-		for(Vehicle v:found) {
+		for(Vehicle v:found) { 
 			cars.add(modelFromVehicle(v));
 		}
 		return cars;
