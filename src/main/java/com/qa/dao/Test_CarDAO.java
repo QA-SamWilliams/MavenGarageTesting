@@ -40,8 +40,7 @@ public class Test_CarDAO {
 	@Test
 	
 	public void testRead() {
-		carDAO.create(testCar);
-		carDAO.create(testCar2);
+
 		assertEquals(testCar, carDAO.read(1)); 
 	}
 	
